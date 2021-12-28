@@ -49,7 +49,7 @@ public class SendAForm {
          assertEquals(expected, text);
      }
     @Test
-    public void shouldTypeOnlySurname() {
+    public void shouldTypeOnlyName() {
         driver.findElement(By.cssSelector("[type='text']")).sendKeys("Елена");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79998887766");
         driver.findElement(By.cssSelector(".checkbox__box")).click();
